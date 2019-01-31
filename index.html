@@ -5,6 +5,8 @@
 	<title>孫詠雋的個人網站</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<style type="text/css">
 		body{
 			background-color: #74b49b  ;
@@ -12,6 +14,7 @@
 		}
 		a{
 			color: black;
+			text-decoration: none;
 		}
 		h2{
 			color: #0f0a3c;
@@ -25,11 +28,14 @@
 			border-radius: 100%;
 			width: 200px;
 			height: 200px;
+			border: solid 3.5px black;
 		}
 		h1{
 			text-align: center;
 			font-weight: 500;
 			font-family: 'Courgette', cursive;
+			margin-top: 50px;
+			margin-bottom: 10px;
 			
 		}
 		#designed{
@@ -42,12 +48,20 @@
 			background-color: black;
 			width: 50%;
 		}
+		#we{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#ab{
+			margin-left: auto;
+			margin-right: auto;
+		}
 	</style>
 </head>
 
 <body>
-	<h1><em>Peter's Personal Website</em></h1>
-	<table>
+	<h1><i class="fas fa-desktop"></i> <em>Peter's Personal Website</em></h1>
+	<table id="ab">
 		<tr>
 			<td>
 				<img src="img/photo1.jpg" >
@@ -56,23 +70,29 @@
 				<h2><em>孫詠雋</em></h2>
 				<p><em><strong><a href="http://www.mlps.ttct.edu.tw/bin/home.php">馬蘭國小</a></strong>-學生</em></p>
 <p>我是馬蘭國小的學生，名叫孫詠雋😃，喜歡玩Minecraft，<br>無聊時喜歡喝茶，也喜歡看動漫，功課不算太好，但每次月考都有前五名。</p>
-<hr>
 			</td>
 		</tr>
 	</table>
-<h3>專長</h3>
+	<hr>
+<div id="we" class="row">
+	<div class="col-lg-3">
+		<h3>專長</h3>
 <ol type="I">
 	<li>閱讀</li>
 	<li>寫作</li>
 	<li>跑步</li>
 </ol>
-<h3>嗜好</h3>
+	</div>
+	<div class="col-lg-3">
+		<h3>嗜好</h3>
 <ul>
 	<li>閱讀</li>
 	<li><a href="https://minecraft.net/zh-hant/">玩Minecraft</a></li>
 	<li><a href="https://www.youtube.com/?gl=TW">看Youtube</a></li>
 </ul>
-<h3>學習經驗</h3>
+	</div>
+	<div class="col-lg-3">
+		<h3>學習經驗</h3>
 <table >
 	<tr>
 		<th>時間</th>
@@ -80,14 +100,16 @@
 	</tr>
 	<tr>
 		<td>2013-2019</td>
-		<td><strong>馬蘭國小</strong></td>
+		<td>馬蘭國小</td>
 	</tr>
 	<tr>
 		<td>2016-2019</td>
 		<td><strong><a href="https://www.nownews.com/news/20170719/2590818/">順天書屋</a></strong></td>
 	</tr>
 </table>
-<h3>能力</h3>
+	</div>
+	<div class="col-lg-3">
+		<h3>能力</h3>
 <table >
 	<tr>
 		<th>名稱</th>
@@ -106,8 +128,12 @@
 		<td>💥💥</td>
 	</tr>
 </table>
+	</div>
+</div>
+
+
 <div class="hp">
-<h3><a href="contact.html">聯絡資訊</a></h3>
+	<h3><a href="contact.html">聯絡資訊</a></h3>
 <p>若有問題，歡迎聯絡</p>
 </div>
 <p id="designed">©2019 Peter個人網站. All rights reserved<br>
